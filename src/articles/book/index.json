@@ -1,0 +1,27 @@
+[
+  {
+    "title": "簡愛",
+    "star": 3.5,
+    "image": {
+      "url": "https://www.books.com.tw/img/001/059/49/0010594940.jpg",
+      "site": "博客來",
+      "link": "http://www.books.com.tw/products/0010594940"
+    },
+    "short": "",
+    "tags": [
+      {
+        "color": "#f7c271",
+        "text": "#經典"
+      },
+      {
+        "color": "#b7e8e8",
+        "text": "#英國"
+      },
+      {
+        "color": "#f5d6db",
+        "text": "#愛情"
+      }
+    ],
+    "time": "2018/07/11"
+  }
+]
