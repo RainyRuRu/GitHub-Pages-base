@@ -14,13 +14,13 @@ export default {
   props: {
     star: {
       required: true,
-      validator: function validator(value) {
+      validator(value) {
         return (value >= 0) && (value <= 5);
       },
     },
   },
   methods: {
-    calculateStarType: function calculateStarType(number) {
+    calculateStarType(number) {
       if (this.star >= number) {
         return 1;
       } else if (this.star + 0.5 >= number) {
