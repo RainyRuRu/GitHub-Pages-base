@@ -1,12 +1,12 @@
 [
   {
-    "title": "Life",
-    "directory": "life",
-    "route": "/life"
-  },
-  {
     "title": "Book",
     "directory": "book",
     "route": "/book"
+  },
+  {
+    "title": "Life",
+    "directory": "life",
+    "route": "/life"
   }
 ]
