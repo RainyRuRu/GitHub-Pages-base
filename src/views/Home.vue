@@ -13,6 +13,8 @@
             :imageUrl="pinItem.image.url"
             :imageSite="pinItem.image.site"
             :imageLink="pinItem.image.link"
+            :category="pinItem.category"
+            :title="pinItem.title"
             :description="pinItem.message"
             :detail="pinItem.detail"
           />
@@ -27,7 +29,9 @@
             :imageUrl="latestItem.image.url"
             :imageSite="latestItem.image.site"
             :imageLink="latestItem.image.link"
-            :description="latestItem.time"
+            :category="latestItem.category"
+            :title="latestItem.time"
+            :description="latestItem.title"
             :detail="latestItem.detail"
           />
         </div>
@@ -79,6 +83,7 @@ export default {
           if (article.title in queue) {
             const itemInQueue = queue[article.title];
             const pinItem = _.cloneDeep(article);
+            pinItem.category = category.title;
             pinItem.message = itemInQueue.pinItem.message;
             pinItems[itemInQueue.index] = pinItem;
           }
@@ -91,11 +96,26 @@ export default {
       let latestItems = [];
 
       this.$route.meta.forEach((category) => {
-        latestItems = latestItems.concat(category.data.slice(0, number));
+        let categoryData = category.data.slice(0, number);
+        categoryData = categoryData.map((item) => {
+          const newItem = _.cloneDeep(item);
+          newItem.category = category.title;
+
+          return newItem;
+        });
+
+        latestItems = latestItems.concat(categoryData);
       });
 
-      latestItems.sort((item1, item2) =>
-        this.parseTimeStringToDate(item2.time) - this.parseTimeStringToDate(item1.time));
+      latestItems.sort((item1, item2) => {
+        let time1 = this.parseTimeStringToDate(item1.time);
+        let time2 = this.parseTimeStringToDate(item2.time);
+
+        time1 = Number.isNaN(time1.getTime()) ? 0 : time1;
+        time2 = Number.isNaN(time2.getTime()) ? 0 : time2;
+
+        return time2 - time1;
+      });
 
       this.latestItems = latestItems.slice(0, number);
     },
