@@ -1,5 +1,26 @@
 [
   {
+    "title": "籠子裡的愛麗絲",
+    "star": 4.5,
+    "image": {
+      "url": "https://www.books.com.tw/img/001/063/09/0010630907.jpg",
+      "site": "博客來",
+      "link": "http://www.books.com.tw/products/0010630907"
+    },
+    "short": "比真相更重要的，是正義！因為愛麗絲被綁架，意外調查出她的種種過去...",
+    "tags": [
+      {
+        "color": "#0366d691",
+        "text": "#法國"
+      },
+      {
+        "color": "gainsboro",
+        "text": "#懸疑"
+      }
+    ],
+    "time": "2018/08/16"
+  },
+  {
     "title": "死神的精準度",
     "star": 3,
     "image": {
