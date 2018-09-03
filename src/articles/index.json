@@ -5,6 +5,11 @@
     "route": "/book"
   },
   {
+    "title": "Handmade",
+    "directory": "handmade",
+    "route": "/handmade"
+  },
+  {
     "title": "Life",
     "directory": "life",
     "route": "/life"
