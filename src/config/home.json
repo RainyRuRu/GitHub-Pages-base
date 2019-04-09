@@ -1,5 +1,15 @@
 {
   "message": "Keep reading and learning handmade! ✋",
   "pin_items": [
+    {
+      "directory": "book",
+      "title": "偷書賊",
+      "message": "首推經典好書！"
+    },
+    {
+      "directory": "book",
+      "title": "咆哮山莊",
+      "message": "刺激、令人欲罷不能！"
+    }
   ]
 }

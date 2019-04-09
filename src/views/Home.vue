@@ -5,7 +5,7 @@
     </div>
     <div class="home__board">
       <div class="row">
-        <h4 class="title">Pin Items</h4>
+        <h4 class="title">おすすめ d(`･∀･)b</h4>
         <div class="item-group">
           <Mark
             v-for="pinItem in pinItems"
