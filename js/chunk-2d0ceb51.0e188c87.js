@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0ceb51"],{6133:function(e){e.exports=[{title:"我的縫紉工具們",image:{url:"http://www.brother.tw/AP/Handlers/ApHandler.ashx?m=rs&guid=8f4b5170-0590-463c-93e9-1e6eefdbb7d5&pr=20",site:"Brother",link:"http://www.brother.tw/zh-TW/home/all-sewing-machines/sewing-machines/JA1450NT"},short:"初入裁縫界，我的新手工具包介紹！",time:"2018/10/24",detail:{directory:"/handmade/tools.md",route:"/handmade/tools"}}]}}]);
+//# sourceMappingURL=chunk-2d0ceb51.0e188c87.js.map
